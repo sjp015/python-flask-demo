@@ -5,6 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template(index.html)
+    return "Hello, You're using Python App"
 
 app.run(debug=True, host='0.0.0.0')
