@@ -14,6 +14,5 @@ node {
    }
    stage("Test and Deploy Docker Container"){
         sh "sudo docker run -p 5000:5000 --name flask-app -d flask-app "
-        sh "sudo docker rm --force flask-app"
     }
 }
