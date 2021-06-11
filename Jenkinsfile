@@ -9,7 +9,6 @@ node {
    }
    stage('Build Docker') {
        // build the docker image from the source code using the BUILD_ID parameter in image name
-         sh "echo "jenkins ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers"
          sh "sudo docker build -t flask-app ."
        //  sh "sudo docker rm --force flask-app"
    }
